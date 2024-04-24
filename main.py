@@ -1,8 +1,10 @@
 import os.path
 
+from colored import Fore, Back, Style
+
 from todo_functions import add_todo, remove_todo, mark_todo, View_todo
 
-print("Welcome to your TODO list application")
+print(f"{Fore.red}{Back.green}Welcome to your TODO list application{Style.reset}")
 
 def create_menu():
     print("1. Enter 1 to add item to the list")
